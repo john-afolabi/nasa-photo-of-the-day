@@ -14,7 +14,6 @@ function Container() {
         `https://api.nasa.gov/planetary/apod?api_key=TUfWIbg9HuPfq4nEIo9bI7ZUdQyMstScLBGutsMF&date=${date}`
       )
       .then(response => {
-        console.log(response.data);
         setImage(response.data);
       })
       .catch(error => {});
@@ -29,7 +28,7 @@ function Container() {
         onChange={e => setDate(e.target.value)}
       ></input></p>
       <Header title={image.title} />
-      <Image url={image.url} explanation={image.explanation} />
+      <Image url={image.url} title={image.title} />
       <ImageInfo date={image.date} explanation={image.explanation} />
     </div>
   );
