@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ImageInfo from "./ImageInfo";
+import Image from "./Image";
 import axios from 'axios';
 
 function Container() {
@@ -17,7 +18,10 @@ function Container() {
 
     return (
         <div>
-
+            < Image 
+                url={image.url}
+                explanation={image.explanation}
+            />
             < ImageInfo 
                 date={image.date}
                 explanation={image.explanation}
