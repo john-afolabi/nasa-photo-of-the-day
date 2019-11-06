@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ImageInfo from "./ImageInfo";
-import Image from "./Image";
+import DateSelector from "./DateSelector";
 import axios from 'axios';
 
 function Container() {
@@ -18,14 +17,7 @@ function Container() {
 
     return (
         <div className="container">
-            < Image 
-                url={image.url}
-                explanation={image.explanation}
-            />
-            < ImageInfo 
-                date={image.date}
-                explanation={image.explanation}
-            />
+            < DateSelector />
         </div>
     )
     
