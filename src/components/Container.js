@@ -17,7 +17,7 @@ function Container() {
     }, [])
 
     return (
-        <div>
+        <div className="container">
             < Image 
                 url={image.url}
                 explanation={image.explanation}

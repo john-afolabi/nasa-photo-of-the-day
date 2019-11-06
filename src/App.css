@@ -31,3 +31,16 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  background: black;
+}
+
+.imageInfo {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+}
