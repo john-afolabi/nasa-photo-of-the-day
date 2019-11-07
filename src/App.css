@@ -45,11 +45,11 @@
   font-size: 18px;
 }
 
-.dateselect {
-  padding: 30px 0;
+.dateSelector {
+  margin: 40px auto 0;
 }
 
-input[type="date"]{
+/* input[type="date"]{
   height: 35px;
   margin: 30px auto 0;
   font-size: 18px;
@@ -61,10 +61,14 @@ input[type="date"]{
 
 input[type="date"]::-webkit-inner-spin-button { 
   display: none;
-}
+} */
 
 .header h1 {
   background: black;
   padding: 30px 0;
   color: white;
+}
+
+.nasaImage {
+  max-width: 900px;
 }
